@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="styles/root-color.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="skeltons.css">
+	<link rel="stylesheet" href="styles/payment.css">
+	<script src="/js/theme-switcher.js"></script>
+	
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="logo">SW FOOD</div>
+		<ul class="nav-menu">
+			<li><a href="index.html" class="active"><img loading="lazy" src="/image/home.gif" alt="Home icon">Home</a>
+			</li>
+			<li><a href="#orderd"><img loading="lazy" src="/image/order.gif" alt="Order icon">Ordered</a></li>
+			<li><a href="bills.html"><img loading="lazy" src="/image/cash.svg" alt="Bills icon">Bills</a></li>
+			<li><a href="#" class="cart-toggle"><img loading="lazy" src="/image/cart.gif" alt="Cart icon">Cart</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section class="left-section">
+			<h2>Food Categories</h2>
+			<ul class="food-types">
+				<li class="active"><img loading="lazy" src="/image/food.gif" alt="All items icon">All Items</li>
+				<li><img loading="lazy" src="/image/food.gif" alt="Food icon">Main Course</li>
+				<li><img loading="lazy" src="/image/snacks.gif" alt="Snacks icon">Snacks</li>
+				<li><img loading="lazy" src="/image/drink.gif" alt="Drinks icon">Drinks</li>
+				<li><img loading="lazy" src="/image/tea.gif" alt="Tea icon">Tea</li>
+			</ul>
+		</section>
+		<section class="center-section">
+			<h2>Food Menu</h2>
+			<div class="card-container">
+				<!-- Generate Cards -->
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/1.PNG" alt="Food image">
+					</div>
+					<div class="card-content-container">
+						<h1>Chiken Rice</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/2.PNG" alt="Food image">
+					</div>
+					<div class="card-content-container">
+						<h1>Chiken rice</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/3.PNG" alt="Food image">
+					</div>
+					<div class="card-content-container">
+						<h1>Soup</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/4.PNG" alt="Soup image">
+					</div>
+					<div class="card-content-container">
+						<h1>Soup</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/4.PNG" alt="Soup image">
+					</div>
+					<div class="card-content-container">
+						<h1>Meat</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/5.PNG" alt="Food image">
+					</div>
+					<div class="card-content-container">
+						<h1>House</h1>
+						<p class="price">Price : 220₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img loading="lazy" src="/image/6.PNG" alt="Food image">
+					</div>
+					<div class="card-content-container">
+						<h1>Pizza</h1>
+						<p class="price">Price : 120₹</p>
+						<p>Lorem ipsum dolor</p>
+						<div class="btn"><button>Add To Cart</button></div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="right-section">
+			<h2>Cart Items</h2>
+			<div class="cart-items">
+				<div class="cart-card">
+					<img loading="lazy" src="/image/1.PNG" alt="Burger image" class="cart-card-img">
+					<div class="cart-card-details">
+						<span class="cart-food-name">Burger</span>
+						<div class="details-bottom">
+							<span class="cart-food-price">$5</span>
+							<div class="cart-card-qty">
+								<button class="minus-btn">-</button>
+								<span class="qty">1</span>
+								<button class="plus-btn">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ...more cart cards as needed... -->
+			</div>
+			<!-- Price Details Card -->
+			<div class="price-details">
+				<div class="detail">
+					<span>Total Price:</span>
+					<span class="bill-price">$189</span>
+				</div>
+				<div class="detail">
+					<span>GST (10%):</span>
+					<span class="bill-price">$20</span>
+				</div>
+				<div class="detail">
+					<span>Offer:</span>
+					<span class="bill-price">-$50</span>
+				</div>
+				<div class="detail grand-total">
+					<span>Grand Total:</span>
+					<span class="bill-price">$200</span>
+				</div>
+			</div>
+			<button class="pay-now"><img loading="lazy" src="/image/pay.gif" alt="Pay icon"> Pay Now</button>
+		</section>
+	</main>
+	
+	<script src="app.js"></script>
+</body>
+
+</html>

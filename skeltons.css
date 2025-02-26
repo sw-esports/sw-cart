@@ -1,0 +1,255 @@
+/* Add these styles to your existing stylesheet */
+
+/* Loading animation styles */
+.payment-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.loading-spinner {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.payment-loading p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Enhanced button styles */
+.action-button {
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.action-button:hover {
+  background-color: #388e3c;
+}
+
+.action-button:active {
+  transform: scale(0.98);
+}
+
+#cancel-payment,
+#close-payment {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+#cancel-payment:hover,
+#close-payment:hover {
+  background-color: #d32f2f;
+}
+
+#try-again {
+  background-color: #2196f3;
+}
+
+#try-again:hover {
+  background-color: #0b7dda;
+}
+
+/* Enhanced Payment Screen Styles */
+.payment-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.payment-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Skeleton Loading Animation Styles */
+.skeleton-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skeleton-header {
+  height: 40px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skeleton-left {
+  flex: 6;
+  padding-right: 20px;
+}
+
+.skeleton-right {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skeleton-line {
+  height: 20px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-line.wide {
+  height: 30px;
+}
+
+.skeleton-line.small {
+  width: 60%;
+}
+
+.skeleton-items {
+  margin: 15px 0;
+}
+
+.skeleton-item-header {
+  height: 25px;
+  width: 80px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-item {
+  height: 18px;
+  margin: 8px 0;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+  width: 95%;
+}
+
+.skeleton-qr {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.skeleton-button {
+  height: 40px;
+  width: 150px;
+  margin-left: 10px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Processing Animation */
+.skeleton-processing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.processing-spinner {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #4caf50;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success and Error Icons */
+.success-icon,
+.error-icon {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  color: white;
+}
+
+.success-icon {
+  border:4px solid #ff7008;
+}
+
+.error-icon {
+  background-color: #f44336;
+}

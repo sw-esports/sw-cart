@@ -1,0 +1,107 @@
+/* Global Color Theme Variables */
+
+:root {
+  /* Main Theme Colors */
+  --primary-bg: #ffffff;
+  --secondary-bg: #ffd9be;
+  --text-color: #000000;
+  --text-light: #777777;
+  --text-lighter: #999999;
+
+  /* Accent Colors */
+  --accent-color: #ff7008;
+  --hover-accent: #ba540a;
+
+  /* State Colors */
+  --success-color: #28a745;
+  --error-color: #f44336;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+
+  /* Button Colors */
+  --primary-btn-bg: #ff7008;
+  --primary-btn-text: #ffffff;
+  --secondary-btn-bg: #1c1c1c;
+  --secondary-btn-text: #ffffff;
+  --danger-btn-bg: #d32f2f;
+  --info-btn-bg: #2196f3;
+  --info-btn-hover: #0b7dda;
+
+  /* Border Colors */
+  --border-light: #eeeeee;
+  --border-medium: #dddddd;
+  --border-dark: #cccccc;
+  --border-accent: #ff7008;
+
+  /* Shadow Colors */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color-medium: rgba(0, 0, 0, 0.2);
+  --shadow-color-dark: rgba(0, 0, 0, 0.3);
+  --shadow-accent: rgba(255, 105, 35, 0.37);
+
+  /* Overlay Colors */
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+  --overlay-light: rgba(0, 0, 0, 0.5);
+
+  /* Skeleton Loading Colors */
+  --skeleton-base: #f0f0f0;
+  --skeleton-highlight: #e0e0e0;
+
+  /* Processing Colors */
+  --spinner-track: #f3f3f3;
+  --spinner-active: #3498db;
+
+  /* Card Colors */
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-heading: #333333;
+}
+
+/* Improved Dark Theme with Better Color Palette */
+:root.dark-theme {
+  /* Image Filter Resets for Dark Theme */
+  .food-types img{
+    filter: invert(1) hue-rotate(196deg);
+  }
+  nav img{
+    filter: invert(1) hue-rotate(191deg);
+    
+  }
+  
+  /* 
+
+  /* Main Theme Colors - More refined darker backgrounds */
+  --primary-bg: #121212;
+  --secondary-bg: #1e1e1e;
+  --text-color: #f0f0f0;
+  --text-light: #b0b0b0;
+  --text-lighter: #909090;
+
+  /* Accent Colors - Warmer and more visible */
+
+  --primary-btn-bg: #ff7008;
+  --primary-btn-text: #ffffff;
+  --secondary-btn-bg: #555555;
+  --secondary-btn-text: #ffffff;
+
+  --border-light: #444444;
+  --border-medium: #555555;
+  --border-dark: #666666;
+  --border-accent: #ff7008;
+
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-color-medium: rgba(0, 0, 0, 0.4);
+  --shadow-color-dark: rgba(0, 0, 0, 0.5);
+  --shadow-accent: rgba(255, 105, 35, 0.5);
+
+  --overlay-bg: rgba(0, 0, 0, 0.9);
+  --overlay-light: rgba(0, 0, 0, 0.7);
+
+  --skeleton-base: #333333;
+  --skeleton-highlight: #444444;
+
+  --spinner-track: #444444;
+  --spinner-active: #ff7008;
+}
+
+/* Add more themes here by copying the above block and changing the colors */

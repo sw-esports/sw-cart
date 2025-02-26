@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bills History</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bills.css">
+    <link rel="stylesheet" href="skeltons.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="nav-menu">
+            <li><img loading="lazy" src="/image/home.gif" alt="Home icon"><a href="index.html">Home</a></li>
+            <li><img loading="lazy" src="/image/order.gif" alt="Order icon"><a href="#orderd">Ordered</a></li>
+            <li><img loading="lazy" src="/image/cash.svg" alt="Bills icon"><a href="bills.html" class="active">Bills</a>
+            </li>
+            <li><img loading="lazy" src="/image/cart.gif" alt="Cart icon"><a href="index.html">Cart</a></li>
+        </ul>
+    </nav>
+    <main class="bills-main">
+        <section class="bills-container">
+            <h1>Bill History</h1>
+
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="time-filter">Filter by time period:</label>
+                    <select id="time-filter">
+                        <option value="all">All Time</option>
+                        <option value="daily">Today</option>
+                        <option value="weekly">This Week</option>
+                        <option value="monthly">This Month</option>
+                    </select>
+                </div>
+
+                <div class="date-filter">
+                    <label for="start-date">From:</label>
+                    <input type="date" id="start-date">
+                    <label for="end-date">To:</label>
+                    <input type="date" id="end-date">
+                    <button id="apply-date-filter">Apply</button>
+                </div>
+
+                <button id="download-selected-bills" class="download-btn" disabled>Download Selected Bills</button>
+            </div>
+
+            <div class="bills-summary">
+                <div class="summary-item">
+                    <span>Total Orders:</span>
+                    <span id="total-orders">0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Total Amount:</span>
+                    <span id="total-amount">₹0.00</span>
+                </div>
+            </div>
+
+            <div class="bills-list-container">
+                <table class="bills-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all-bills"></th>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bills-list">
+                        <!-- Bills will be populated here via JavaScript -->
+                    </tbody>
+                </table>
+
+                <div class="no-bills-message" id="no-bills-message">
+                    No bills found for the selected period.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="bills.js"></script>
+</body>
+
+</html>
